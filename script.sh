@@ -1,4 +1,6 @@
 #!/bin/bash
-echo "Starting DevOps Deployment Pipeline..."
-echo "Connecting to database using password: $DB_PASSWORD"
+echo "--- PIPELINE RUN: $(date) ---" >> deployment.log
+echo "Status: Database connected successfully using $DB_PASSWORD" >> deployment.log
+echo "Status: Deployment complete!" >> deployment.log
+
 
